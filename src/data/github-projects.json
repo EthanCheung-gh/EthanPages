@@ -1,0 +1,225 @@
+{
+  "generatedAt": "2026-10-19T13:55:29.107Z",
+  "user": "EthanCheung-gh",
+  "includeForks": false,
+  "repos": 5,
+  "projects": [
+    {
+      "slug": "metricstudio",
+      "name": "MetricStudio",
+      "repo": "MetricStudio",
+      "desc": "Plotly-based data workspace: import, drag-and-drop charts, dashboards, and AI answers with citations.",
+      "category": "Visualization",
+      "status": "Active",
+      "year": "2026",
+      "role": "Creator",
+      "type": "Open Source",
+      "stack": [
+        "TypeScript",
+        "Python",
+        "Rust"
+      ],
+      "languages": {
+        "TypeScript": 716328,
+        "Python": 588356,
+        "CSS": 6361,
+        "JavaScript": 5980,
+        "Shell": 2863,
+        "Rust": 2680,
+        "HTML": 439
+      },
+      "stars": 2,
+      "forks": 0,
+      "license": "Apache-2.0",
+      "created": "2026-08-30",
+      "pushed": "2026-10-09",
+      "repoUrl": "https://github.com/EthanCheung-gh/MetricStudio",
+      "demoUrl": "",
+      "featured": true,
+      "accent": "var(--blue)",
+      "accentHex": "#2870e8",
+      "icon": "M",
+      "overview": "A Plotly-based desktop workspace for personal data analysis: import data, clean and transform it, build charts by drag and drop, compose interactive dashboards, and ask questions of it with AI — all without sending data off the machine.",
+      "highlights": [
+        "Drag-and-drop chart configuration with a live properties panel",
+        "Dashboard composition plus a SQL workbench and command palette",
+        "AI answers computed by deterministic pandas tools, not model guesswork",
+        "Every figure carries a [n] citation back to the exact tool result",
+        "Statistical tests (Welch t, Mann-Whitney U, regression) run in scipy",
+        "Dataset content is treated as untrusted input and fenced from instructions"
+      ],
+      "decisions": "Trust is the feature. Numbers come from pandas tools, not from the model reading a data sample; statistics come from scipy, and the LLM only explains them. When an answer cannot show its source, it is not an answer.",
+      "next": "Actively developed — the public repo is at v1.15.0.",
+      "topics": []
+    },
+    {
+      "slug": "seckeybox",
+      "name": "SecKeyBox",
+      "repo": "SecKeyBox",
+      "desc": "Local-first password manager for developers — 8 credential types, Argon2id + AES-256-GCM.",
+      "category": "Open Source",
+      "status": "Active",
+      "year": "2026",
+      "role": "Creator",
+      "type": "Open Source",
+      "stack": [
+        "TypeScript",
+        "Rust"
+      ],
+      "languages": {
+        "TypeScript": 214063,
+        "Rust": 203654,
+        "CSS": 777,
+        "JavaScript": 666,
+        "HTML": 641
+      },
+      "stars": 0,
+      "forks": 0,
+      "license": "Apache-2.0",
+      "created": "2026-10-03",
+      "pushed": "2026-10-08",
+      "repoUrl": "https://github.com/EthanCheung-gh/SecKeyBox",
+      "demoUrl": "",
+      "featured": true,
+      "accent": "var(--green)",
+      "accentHex": "#28e898",
+      "icon": "S",
+      "overview": "A local-first password manager built for developers. Instead of forcing every secret into a website-and-password shape, it ships eight purpose-built credential types and keeps everything encrypted on your own machine.",
+      "highlights": [
+        "Eight credential types: account, API key, env vars, database, SSH, cloud, license, SMTP",
+        "Per-field AES-256-GCM with a random nonce; key derived via Argon2id (m=64 MB)",
+        "Master password rotation re-encrypts every stored secret",
+        "Built-in TOTP, password generator, secret history and a local security audit",
+        "Auto-lock after inactivity and clipboard auto-clear after copying",
+        "Import/export, with bulk import from Chrome, Bitwarden, 1Password, LastPass"
+      ],
+      "decisions": "Cryptography is only half the job — the other half is default behaviour. Zero built-in credentials, auto-lock, clipboard clearing and a local audit dashboard are what make a vault trustworthy in daily use.",
+      "next": "Tauri 2 + React + Rust; releases ship through tag-triggered 3-platform CI.",
+      "topics": []
+    },
+    {
+      "slug": "perf-analyzer",
+      "name": "Perf Analyzer",
+      "repo": "perf-analyzer",
+      "desc": "Streamlit analyzer for resource-usage Excel data: scenario comparison, leak detection, auto reports.",
+      "category": "Automation",
+      "status": "Active",
+      "year": "2026",
+      "role": "Creator",
+      "type": "Open Source",
+      "stack": [
+        "Python"
+      ],
+      "languages": {
+        "Python": 385464
+      },
+      "stars": 0,
+      "forks": 0,
+      "license": "—",
+      "created": "2026-09-20",
+      "pushed": "2026-10-10",
+      "repoUrl": "https://github.com/EthanCheung-gh/perf-analyzer",
+      "demoUrl": "",
+      "featured": true,
+      "accent": "var(--purple)",
+      "accentHex": "#8b5cf6",
+      "icon": "P",
+      "overview": "A Streamlit application for analysing application resource-usage data exported to Excel: scenario comparison, trend reading, threshold anomalies, leak detection, version regression, resource efficiency, capacity estimation and an automatically generated test report.",
+      "highlights": [
+        "Every sheet is a scenario; the first sheet is system information",
+        "Memory-leak detection, version regression judgement and capacity estimation",
+        "Threshold-based anomaly scanning across CPU, memory and handles",
+        "Companion psutil collector whose output the analyzer recognizes with zero mapping",
+        "Written methodology doc so every metric definition is reviewable"
+      ],
+      "decisions": "Performance numbers only persuade when the definition behind every metric is written down. The methodology document ships with the tool, so a finding can be argued with instead of merely believed.",
+      "next": "Actively maintained; the collector and the analysis modes evolve together.",
+      "topics": []
+    },
+    {
+      "slug": "atomgitaccountlens",
+      "name": "AtomGit AccountLens",
+      "repo": "AtomGitAccountLens",
+      "desc": "Pure-frontend lens for GitCode / AtomGit accounts: repos, languages, commits and activity.",
+      "category": "Visualization",
+      "status": "Active",
+      "year": "2026",
+      "role": "Creator",
+      "type": "Open Source",
+      "stack": [
+        "TypeScript"
+      ],
+      "languages": {
+        "TypeScript": 174201,
+        "CSS": 17415,
+        "HTML": 651
+      },
+      "stars": 0,
+      "forks": 0,
+      "license": "—",
+      "created": "2026-10-04",
+      "pushed": "2026-10-04",
+      "repoUrl": "https://github.com/EthanCheung-gh/AtomGitAccountLens",
+      "demoUrl": "https://ethancheung-gh.github.io/AtomGitAccountLens/",
+      "featured": false,
+      "accent": "var(--cyan)",
+      "accentHex": "#3d8bfd",
+      "icon": "A",
+      "overview": "A pure-frontend analysis lens for GitCode / AtomGit accounts. Paste a personal access token and get a full visual read on repositories, languages, commits and activity — every request goes straight to the platform API, so data never leaves the browser.",
+      "highlights": [
+        "Overview, repository profiling, activity heatmaps and a shareable annual report",
+        "Language composition switchable between repo-weighted and star-weighted",
+        "Deep fetch with a serial rate-limit queue, exponential backoff and resumable runs",
+        "Snapshots cached in localStorage, with an explicit refresh instead of silent staleness",
+        "Vitest coverage on throttling, aggregation and storage logic, wired into CI"
+      ],
+      "decisions": "Rate limiting is a product feature. A queue you can interrupt, resume and reason about beats an eight-second spinner with no explanation.",
+      "next": "Deployed as a static site through GitHub Actions.",
+      "topics": []
+    },
+    {
+      "slug": "linkcollections",
+      "name": "LinkCollections",
+      "repo": "LinkCollections",
+      "desc": "Cross-platform bookmark manager: folders, tags, search, dual views and ECharts statistics.",
+      "category": "Open Source",
+      "status": "Active",
+      "year": "2026",
+      "role": "Creator",
+      "type": "Open Source",
+      "stack": [
+        "Vue",
+        "TypeScript"
+      ],
+      "languages": {
+        "Vue": 118021,
+        "TypeScript": 50666,
+        "CSS": 3979,
+        "JavaScript": 3948,
+        "HTML": 361
+      },
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "created": "2026-01-31",
+      "pushed": "2026-02-15",
+      "repoUrl": "https://github.com/EthanCheung-gh/LinkCollections",
+      "demoUrl": "",
+      "featured": false,
+      "accent": "var(--mint)",
+      "accentHex": "#4beeb4",
+      "icon": "L",
+      "overview": "A modern cross-platform bookmark manager: folders and tags, card and list views, full-text search, one-click opening in the browser you choose — plus access statistics charted with ECharts.",
+      "highlights": [
+        "Folder and tag organisation with a card / list dual view",
+        "Full-text search across titles, URLs and descriptions",
+        "Access counts and last-visited time per bookmark",
+        "Favicon fetching with a graceful fallback",
+        "Light and dark themes on top of Element Plus"
+      ],
+      "decisions": "Small daily tools are used dozens of times a day, so the details that matter are favicon loading, one-click open and remembering what you actually click.",
+      "next": "MIT licensed and open to contributions.",
+      "topics": []
+    }
+  ]
+}
