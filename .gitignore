@@ -7,3 +7,5 @@ dist/
 .env.*
 !.env.example
 content/drafts/
+.openbitfun/
+/.openbitfun/search/flashgrep-index/

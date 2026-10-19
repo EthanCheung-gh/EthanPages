@@ -8,8 +8,8 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 const asset = p => `${BASE}/${p.replace(/^\//, '')}`;
 
 const PROFILE = {
-  name: 'Ethan', fullName: 'Ethan Yi', cn: '易创',
-  email: 'hello@ethan.dev', github: `@${github.user}`, githubUrl: `https://github.com/${github.user}`,
+  name: 'Ethan', fullName: 'Ethan Cheung', cn: '易创',
+  email: 'nirvana.zq@petalmail.com', github: `@${github.user}`, githubUrl: `https://github.com/${github.user}`,
   linkedin: '/in/ethan', location: 'Shenzhen, China', focus: 'Full Stack Development',
 };
 
