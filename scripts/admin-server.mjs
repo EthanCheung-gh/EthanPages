@@ -126,7 +126,7 @@ const page = `<!doctype html>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand"><img src="/brand-mark.svg" alt=""><div><b>Blog Admin</b><small>Ethan · markdown</small></div></div>
+    <div class="brand"><img src="/brand-mark.svg" alt=""><div><b>Blog Admin</b><small>Ethan Cheung · markdown</small></div></div>
     <a class="pill" href="http://localhost:4173/" target="_blank" rel="noreferrer">Open site →</a>
   </header>
   <div class="grid">

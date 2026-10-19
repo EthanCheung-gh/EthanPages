@@ -10,7 +10,7 @@ const asset = p => `${BASE}/${p.replace(/^\//, '')}`;
 const PROFILE = {
   name: 'Ethan', fullName: 'Ethan Cheung', cn: '易创',
   email: 'nirvana.zq@petalmail.com', github: `@${github.user}`, githubUrl: `https://github.com/${github.user}`,
-  linkedin: '/in/ethan', location: 'Shenzhen, China', focus: 'Full Stack Development',
+  location: 'Shenzhen, China', focus: 'Full Stack Development',
 };
 
 const svg = {
@@ -28,8 +28,6 @@ const svg = {
   moon: '<svg viewBox="0 0 24 24"><path d="M21 13.2A8.5 8.5 0 1 1 10.8 3 6.8 6.8 0 0 0 21 13.2Z"/></svg>',
   sun: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
   github: '<svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>',
-  linkedin: '<svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5ZM.22 8.09h4.56V23H.22V8.09ZM8.34 8.09h4.37v2.04h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 7V23h-4.55v-7.3c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.09Z"/></svg>',
-  twitter: '<svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M23 4.9c-.8.36-1.66.6-2.56.7a4.48 4.48 0 0 0 1.96-2.47 8.9 8.9 0 0 1-2.83 1.08 4.46 4.46 0 0 0-7.6 4.07A12.65 12.65 0 0 1 2.78 3.6a4.46 4.46 0 0 0 1.38 5.95c-.73-.02-1.42-.22-2.02-.55v.06a4.46 4.46 0 0 0 3.58 4.37c-.66.18-1.36.2-2.02.08a4.47 4.47 0 0 0 4.17 3.1A8.95 8.95 0 0 1 1.3 18.4a12.62 12.62 0 0 0 6.84 2c8.2 0 12.69-6.8 12.69-12.7l-.01-.58A9.05 9.05 0 0 0 23 4.9Z"/></svg>',
 };
 
 // 项目数据来自 scripts/sync-github.mjs 生成的 src/data/github-projects.json
@@ -39,7 +37,7 @@ const featured = projects.filter(p => p.featured).slice(0, 3);
 const spark = (slug, color) => `<svg class="spark" viewBox="0 0 96 32" fill="none" aria-hidden="true"><defs><linearGradient id="sp-${slug}" x1="0" y1="0" x2="96" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="${color}"/><stop offset="1" stop-color="${color}" stop-opacity=".35"/></linearGradient></defs><polyline points="1,26 15,19 29,23 43,11 57,16 71,6 95,10" stroke="url(#sp-${slug})" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 const logo = `<img src="${asset('brand-mark.svg')}" alt="">`;
-const brandHTML = `<a class="brand" href="/" data-link aria-label="Ethan 易创 — Home">${logo}<span class="brand-text">Ethan<em>${PROFILE.cn}</em></span></a>`;
+const brandHTML = `<a class="brand" href="/" data-link aria-label="Ethan Cheung ${PROFILE.cn} — Home">${logo}<span class="brand-text">Ethan<em>${PROFILE.cn}</em></span></a>`;
 const statusClass = s => ({ Active: 's-active', Experimental: 's-exp', Archived: 's-arch' })[s];
 
 const portrait = (inline, card, anim = '') => `<div class="hero-portrait${inline ? ' inline' : ''}"${anim}>
@@ -75,16 +73,15 @@ function footer() {
       <span class="footer-tag">Building the future, one commit at a time.</span>
       <div class="socials">
         <a class="icon-btn solid" href="${PROFILE.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub">${svg.github}</a>
-        <span class="icon-btn solid" aria-label="LinkedIn">${svg.linkedin}</span>
-        <span class="icon-btn solid" aria-label="Twitter">${svg.twitter}</span>
+        <a class="icon-btn" href="mailto:${PROFILE.email}" aria-label="Email">${svg.mail}</a>
       </div>
     </div>
     <div class="footer-grid">
       <div class="footer-brand">${brandHTML}<p>Full stack developer crafting clean, scalable software and delightful digital experiences.</p></div>
       <div><h5>Pages</h5>${pages.map(([h, l]) => `<a href="${h}" data-link>${l}</a>`).join('')}</div>
-      <div><h5>Contact</h5><a class="f-item" href="mailto:${PROFILE.email}">Email — ${PROFILE.email}</a><a class="f-item" href="${PROFILE.githubUrl}" target="_blank" rel="noreferrer">GitHub — ${PROFILE.github}</a><span class="f-item">LinkedIn — ${PROFILE.linkedin}</span><span class="f-item">Location — ${PROFILE.location}</span></div>
+      <div><h5>Contact</h5><a class="f-item" href="mailto:${PROFILE.email}">Email — ${PROFILE.email}</a><a class="f-item" href="${PROFILE.githubUrl}" target="_blank" rel="noreferrer">GitHub — ${PROFILE.github}</a><span class="f-item">Location — ${PROFILE.location}</span></div>
     </div>
-    <div class="footer-bottom"><span>© 2026 Ethan ${PROFILE.cn}</span><span>Designed &amp; Built by Ethan</span></div>
+    <div class="footer-bottom"><span>© 2026 ${PROFILE.fullName} ${PROFILE.cn}</span><span>Designed &amp; Built by ${PROFILE.name}</span></div>
   </div></footer>`;
 }
 
@@ -331,8 +328,8 @@ function contact() {
       <div class="contact-links">
         <a class="contact-row" href="mailto:${PROFILE.email}"><span>Email</span><span>${PROFILE.email} →</span></a>
         <a class="contact-row" href="${PROFILE.githubUrl}" target="_blank" rel="noreferrer"><span>GitHub</span><span>${PROFILE.github} →</span></a>
-        <div class="contact-row"><span>LinkedIn</span><span>${PROFILE.linkedin}</span></div>
         <div class="contact-row"><span>Location</span><span>${PROFILE.location}</span></div>
+        <div class="contact-row"><span>Name</span><span>${PROFILE.fullName}</span></div>
       </div>
     </div>
     <form id="contact-form" class="fade-up in">
